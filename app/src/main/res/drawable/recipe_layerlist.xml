@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/recipe_shape"
+        android:gravity="center"/>
+    <item
+        android:drawable="@drawable/src_recipe"
+        android:gravity="center"
+        android:height="40dp"
+        android:width="40dp"
+        android:top="20dp" />
+
+</layer-list>

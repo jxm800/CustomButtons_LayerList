@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/ur_shape"
+        android:gravity="center" />
+    <item
+        android:bottom="-2dp" android:left="-2dp"
+        android:drawable="@drawable/ur_shape_fill"
+        android:gravity="left|bottom" />
+    <item
+        android:drawable="@drawable/food_src"
+        android:gravity="center"
+        android:height="70dp"
+        android:width="65dp"
+        android:top="8dp"
+        android:right="-7dp" />
+</layer-list>

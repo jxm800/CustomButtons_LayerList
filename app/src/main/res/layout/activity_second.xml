@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    tools:context=".SecondActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        android:text="BUTTONS MADE WITH SHAPES"
+        android:id="@+id/text1"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tricolor"
+        android:background="@drawable/tricolor_shape"
+        android:id="@+id/tricolorButton"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@id/text1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Radial"
+        android:background="@drawable/radial_shape"
+        android:id="@+id/radialButton"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@id/tricolorButton"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        android:text="BUTTONS MADE WITH SHAPES AND LAYER-LISTS"
+        android:id="@+id/text2"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/mainLinearLayout"/>
+
+    <LinearLayout
+        android:id="@+id/mainLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/radialButton"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/text3">
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="70dp"
+                style="?android:textAppearanceSmall"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:gravity="top|center"
+                android:background="@drawable/calculator_layerlist"
+                android:text="Calculator"
+                android:id="@+id/calculatorButton"/>
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="70dp"
+                android:gravity="top|center"
+                style="?android:textAppearanceSmall"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:background="@drawable/recipe_layerlist"
+                android:layout_marginLeft="-1dp"
+                android:text="Recipes"
+                android:id="@+id/recipeButton"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="73dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="70dp"
+                android:gravity="top|center"
+                style="?android:textAppearanceSmall"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:background="@drawable/meals_layerlist"
+                android:text="Meals"
+                android:layout_marginTop="-3dp"
+                android:id="@+id/mealsButton"/>
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="70dp"
+                android:gravity="top|center"
+                style="?android:textAppearanceSmall"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:background="@drawable/addmeal_layerlist"
+                android:text="Add meal"
+                android:layout_marginTop="-3dp"
+                android:layout_marginLeft="-1dp"
+                android:id="@+id/addMealButton"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        android:text="NORMAL BUTTON (IMAGE BACKGROUND)"
+        android:id="@+id/text3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/imageBackgroundButton"/>
+
+    <Button
+        android:id="@+id/imageBackgroundButton"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/ic_trash"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
